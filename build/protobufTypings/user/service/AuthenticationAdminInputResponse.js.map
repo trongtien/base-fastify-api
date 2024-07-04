@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/AuthenticationAdminInputResponse.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\nimport type { AdminAuthen as _user_service_AdminAuthen, AdminAuthen__Output as _user_service_AdminAuthen__Output } from '../../user/service/AdminAuthen';\n\nexport interface AuthenticationAdminInputResponse {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: (_user_service_AdminAuthen | null);\n  '_error'?: \"error\";\n  '_data'?: \"data\";\n}\n\nexport interface AuthenticationAdminInputResponse__Output {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: (_user_service_AdminAuthen__Output);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["AuthenticationAdminInputResponse_exports", "__toCommonJS"]
+}

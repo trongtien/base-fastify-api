@@ -1,0 +1,2 @@
+"use strict";var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var i=Object.getOwnPropertyNames;var m=Object.prototype.hasOwnProperty;var o=(r,e,c,t)=>{if(e&&typeof e=="object"||typeof e=="function")for(let n of i(e))!m.call(r,n)&&n!==c&&a(r,n,{get:()=>e[n],enumerable:!(t=d(e,n))||t.enumerable});return r};var u=r=>o(a({},"__esModule",{value:!0}),r);var p={};module.exports=u(p);
+//# sourceMappingURL=Ward.js.map

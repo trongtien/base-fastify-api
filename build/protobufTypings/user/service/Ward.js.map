@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/Ward.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface Ward {\n  'code'?: (number);\n  'name'?: (string);\n}\n\nexport interface Ward__Output {\n  'code'?: (number);\n  'name'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["Ward_exports", "__toCommonJS"]
+}

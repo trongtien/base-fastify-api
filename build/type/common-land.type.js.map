@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/type/common-land.type.ts"],
+  "sourcesContent": ["import { RouteGenericInterface } from \"fastify\"\r\nimport { commonLandModel } from \"models\"\r\nimport { CommonSchema } from \"modules/commonLand/common-land.schema\"\r\n\r\nexport type  CommonLandModelWrite = typeof commonLandModel.$inferInsert\r\n\r\nexport interface CreateCommonLandRouteInterface extends RouteGenericInterface {\r\n    Body: {\r\n        name: string,\r\n        code: string,\r\n        province_code: number,\r\n        district_code: number,\r\n        ward_code: number\r\n    }\r\n}\r\n\r\nexport interface CreateCommonLandInterface {\r\n    name: string\r\n    code: string\r\n    provinceCode: number\r\n    districtCode: number\r\n    wardCode: number\r\n}\r\n\r\nexport interface UpdateCommonLandInterface extends CreateCommonLandInterface{\r\n    id: string\r\n}"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["common_land_type_exports", "__toCommonJS"]
+}

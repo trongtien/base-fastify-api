@@ -1,0 +1,107 @@
+
+syntax = "proto3";
+// import "google/protobuf/timestamp.proto";
+package user.service;
+
+service UserService {
+   rpc Healcheck(Empty) returns (Empty) {}
+   rpc FindDistrictByCode(DistrictQuery) returns (DistrictResponse) {}
+   rpc FindProvinceByCode(ProvinceQuery) returns (ProvinceResponse) {}
+   rpc FindWardByCode(WardQuery) returns (WardResponse) {}
+
+   rpc CustomerAuthentication(AuthenticationInput) returns (AuthenticationInputResponse) {}
+   rpc AdminAuthentication(AuthenticationAdminInput) returns (AuthenticationAdminInputResponse) {}
+
+}
+
+message Empty {}
+
+// Authentication customer
+message AuthenticationInput{
+    string authorization = 1;
+}
+
+message UserAuthen {
+    string id = 4;
+    string firstName = 5;
+    string lastName = 6;
+    string role = 7;
+    string email = 8;
+}
+
+message AuthenticationInputResponse {
+    bool status = 1;
+    optional string error = 2;
+    optional UserAuthen data = 3;  
+}
+
+// Authentication admin
+message AuthenticationAdminInput{
+    string authorization = 1;
+}
+
+message AdminAuthen {
+    string id = 4;
+    string username = 5;
+    string status = 6;
+    string role = 7;
+}
+
+message AuthenticationAdminInputResponse {
+    bool status = 1;
+    optional string error = 2;
+    optional AdminAuthen data = 3;  
+}
+
+// Province
+message ProvinceQuery {
+    string code = 1;
+}
+
+message Province {
+    int32 code = 1;
+    string name = 2;
+}
+
+message ProvinceResponse {
+    bool status = 1;
+    optional string error = 2;
+    map<string, Province> data = 3;  
+}
+
+// District 
+message DistrictQuery {
+    string code = 1;
+    string province_code = 2;
+}
+
+message District {
+    int32 code = 1;
+    string name = 2;
+}
+
+message DistrictResponse {
+    bool status = 1;
+    optional string error = 2;
+    map<string, District> data = 3;  
+}
+
+// Ward
+message WardQuery {
+    string code = 1;
+    string district_code = 2;
+}
+
+message Ward {
+    int32 code = 1;
+    string name = 2;
+}
+
+message WardResponse {
+    bool status = 1;
+    optional string error = 2;
+    map<string, Ward> data = 3;  
+}
+
+
+

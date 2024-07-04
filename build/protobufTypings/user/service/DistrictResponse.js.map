@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/DistrictResponse.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\nimport type { District as _user_service_District, District__Output as _user_service_District__Output } from '../../user/service/District';\n\nexport interface DistrictResponse {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: ({[key: string]: _user_service_District});\n  '_error'?: \"error\";\n}\n\nexport interface DistrictResponse__Output {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: ({[key: string]: _user_service_District__Output});\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["DistrictResponse_exports", "__toCommonJS"]
+}

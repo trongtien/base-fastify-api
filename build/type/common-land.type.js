@@ -1,0 +1,2 @@
+"use strict";var t=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var a=Object.getOwnPropertyNames;var c=Object.prototype.hasOwnProperty;var i=(n,e,m,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of a(e))!c.call(n,o)&&o!==m&&t(n,o,{get:()=>e[o],enumerable:!(r=d(e,o))||r.enumerable});return n};var f=n=>i(t({},"__esModule",{value:!0}),n);var p={};module.exports=f(p);
+//# sourceMappingURL=common-land.type.js.map

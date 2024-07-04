@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/type/drizzle.type.ts"],
+  "sourcesContent": ["import { InferInsertModel } from 'drizzle-orm';\r\nimport { NodePgDatabase } from 'drizzle-orm/node-postgres';\r\nimport { PgTableWithColumns, TableConfig } from 'drizzle-orm/pg-core';\r\nimport { drizzleSchema } from 'plugins/drizzle.plugin';\r\n\r\nexport type SchemaDatabase = typeof drizzleSchema;\r\nexport type NodeDatabase = NodePgDatabase<SchemaDatabase>;\r\n\r\nexport type ModalQuery = PgTableWithColumns<any>;\r\n\r\nexport interface ObjWriteInterface extends InferInsertModel<PgTableWithColumns<TableConfig>> {}\r\n\r\nexport interface QueryResultPagination {\r\n  data: any;\r\n  pagination: {\r\n    totalRecords: number;\r\n    totalPages: number;\r\n    currentPage: number;\r\n    limit: number;\r\n  };\r\n}\r\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["drizzle_type_exports", "__toCommonJS"]
+}

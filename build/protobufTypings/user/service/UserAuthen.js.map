@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/UserAuthen.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface UserAuthen {\n  'id'?: (string);\n  'firstName'?: (string);\n  'lastName'?: (string);\n  'role'?: (string);\n  'email'?: (string);\n}\n\nexport interface UserAuthen__Output {\n  'id'?: (string);\n  'firstName'?: (string);\n  'lastName'?: (string);\n  'role'?: (string);\n  'email'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["UserAuthen_exports", "__toCommonJS"]
+}

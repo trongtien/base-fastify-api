@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/AuthenticationInputResponse.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\nimport type { UserAuthen as _user_service_UserAuthen, UserAuthen__Output as _user_service_UserAuthen__Output } from '../../user/service/UserAuthen';\n\nexport interface AuthenticationInputResponse {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: (_user_service_UserAuthen | null);\n  '_error'?: \"error\";\n  '_data'?: \"data\";\n}\n\nexport interface AuthenticationInputResponse__Output {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: (_user_service_UserAuthen__Output);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["AuthenticationInputResponse_exports", "__toCommonJS"]
+}

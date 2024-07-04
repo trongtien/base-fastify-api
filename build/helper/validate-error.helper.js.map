@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/helper/validate-error.helper.ts"],
+  "sourcesContent": ["import { IValidateHttp } from './../type/common.type';\r\nimport { ZodError, ZodIssue } from 'zod';\r\n\r\nexport class ValidateErrorHelper {\r\n  $issue: ZodIssue[];\r\n\r\n  constructor(error: ZodError) {\r\n    this.$issue = error.issues;\r\n  }\r\n\r\n  transformValidateHttp(): IValidateHttp[] {\r\n    const $result: IValidateHttp[] = [];\r\n\r\n    for (let i = 0; i < this.$issue.length; i++) {\r\n      const hasResultFieldError = $result.some((result) => result.field === this.$issue[i].path?.[0]);\r\n      if (hasResultFieldError) {\r\n        continue;\r\n      }\r\n\r\n      $result.push({\r\n        code: this.$issue?.[i]?.code ?? '',\r\n        field: this.$issue?.[i]?.path?.[0]?.toString() ?? '',\r\n        message: this.$issue?.[i]?.message ?? '',\r\n      });\r\n    }\r\n\r\n    return $result;\r\n  }\r\n}\r\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,yBAAAE,IAAA,eAAAC,EAAAH,GAGO,IAAME,EAAN,KAA0B,CAG/B,YAAYE,EAAiB,CAC3B,KAAK,OAASA,EAAM,MACtB,CAEA,uBAAyC,CACvC,IAAMC,EAA2B,CAAC,EAElC,QAASC,EAAI,EAAGA,EAAI,KAAK,OAAO,OAAQA,IACVD,EAAQ,KAAME,GAAWA,EAAO,QAAU,KAAK,OAAOD,CAAC,EAAE,OAAO,CAAC,CAAC,GAK9FD,EAAQ,KAAK,CACX,KAAM,KAAK,SAASC,CAAC,GAAG,MAAQ,GAChC,MAAO,KAAK,SAASA,CAAC,GAAG,OAAO,CAAC,GAAG,SAAS,GAAK,GAClD,QAAS,KAAK,SAASA,CAAC,GAAG,SAAW,EACxC,CAAC,EAGH,OAAOD,CACT,CACF",
+  "names": ["validate_error_helper_exports", "__export", "ValidateErrorHelper", "__toCommonJS", "error", "$result", "i", "result"]
+}

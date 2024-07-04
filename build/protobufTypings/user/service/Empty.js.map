@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/Empty.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface Empty {\n}\n\nexport interface Empty__Output {\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["Empty_exports", "__toCommonJS"]
+}

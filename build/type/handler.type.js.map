@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/type/handler.type.ts"],
+  "sourcesContent": ["import type { FastifyReply, FastifyRequest, RouteGenericInterface } from 'fastify';\r\n\r\nexport type TResponseBase = {\r\n  http_status: number;\r\n  message: string;\r\n  error: any[];\r\n  data: unknown;\r\n};\r\n\r\nexport type Handler<T extends RouteGenericInterface = RouteGenericInterface> = (\r\n  request: FastifyRequest<T>,\r\n  reply: FastifyReply,\r\n) => Promise<void>;\r\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["handler_type_exports", "__toCommonJS"]
+}

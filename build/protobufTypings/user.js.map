@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/protobufTypings/user.ts"],
+  "sourcesContent": ["import type * as grpc from '@grpc/grpc-js';\nimport type { MessageTypeDefinition } from '@grpc/proto-loader';\n\nimport type { UserServiceClient as _user_service_UserServiceClient, UserServiceDefinition as _user_service_UserServiceDefinition } from './user/service/UserService';\n\ntype SubtypeConstructor<Constructor extends new (...args: any) => any, Subtype> = {\n  new(...args: ConstructorParameters<Constructor>): Subtype;\n};\n\nexport interface ProtoGrpcType {\n  user: {\n    service: {\n      AdminAuthen: MessageTypeDefinition\n      AuthenticationAdminInput: MessageTypeDefinition\n      AuthenticationAdminInputResponse: MessageTypeDefinition\n      AuthenticationInput: MessageTypeDefinition\n      AuthenticationInputResponse: MessageTypeDefinition\n      District: MessageTypeDefinition\n      DistrictQuery: MessageTypeDefinition\n      DistrictResponse: MessageTypeDefinition\n      Empty: MessageTypeDefinition\n      Province: MessageTypeDefinition\n      ProvinceQuery: MessageTypeDefinition\n      ProvinceResponse: MessageTypeDefinition\n      UserAuthen: MessageTypeDefinition\n      UserService: SubtypeConstructor<typeof grpc.Client, _user_service_UserServiceClient> & { service: _user_service_UserServiceDefinition }\n      Ward: MessageTypeDefinition\n      WardQuery: MessageTypeDefinition\n      WardResponse: MessageTypeDefinition\n    }\n  }\n}\n\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["user_exports", "__toCommonJS"]
+}

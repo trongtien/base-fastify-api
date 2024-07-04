@@ -1,0 +1,2 @@
+"use strict";var c=Object.defineProperty;var o=Object.getOwnPropertyDescriptor;var s=Object.getOwnPropertyNames;var p=Object.prototype.hasOwnProperty;var d=(r,e,n,i)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of s(e))!p.call(r,t)&&t!==n&&c(r,t,{get:()=>e[t],enumerable:!(i=o(e,t))||i.enumerable});return r};var g=r=>d(c({},"__esModule",{value:!0}),r);var u={};module.exports=g(u);
+//# sourceMappingURL=DistrictQuery.js.map

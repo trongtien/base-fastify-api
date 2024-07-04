@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/ProvinceResponse.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\nimport type { Province as _user_service_Province, Province__Output as _user_service_Province__Output } from '../../user/service/Province';\n\nexport interface ProvinceResponse {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: ({[key: string]: _user_service_Province});\n  '_error'?: \"error\";\n}\n\nexport interface ProvinceResponse__Output {\n  'status'?: (boolean);\n  'error'?: (string);\n  'data'?: ({[key: string]: _user_service_Province__Output});\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["ProvinceResponse_exports", "__toCommonJS"]
+}

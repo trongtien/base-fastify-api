@@ -1,0 +1,2 @@
+"use strict";var o=Object.defineProperty;var _=Object.getOwnPropertyDescriptor;var n=Object.getOwnPropertyNames;var c=Object.prototype.hasOwnProperty;var u=(r,e,i,t)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of n(e))!c.call(r,s)&&s!==i&&o(r,s,{get:()=>e[s],enumerable:!(t=_(e,s))||t.enumerable});return r};var v=r=>u(o({},"__esModule",{value:!0}),r);var a={};module.exports=v(a);
+//# sourceMappingURL=ProvinceResponse.js.map

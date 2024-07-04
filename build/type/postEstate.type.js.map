@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/type/postEstate.type.ts"],
+  "sourcesContent": ["import { RouteGenericInterface } from 'fastify';\r\n\r\nexport enum PostEstateType {}\r\n\r\nexport enum PostEstateIsOwner {\r\n  notOwner = 0,\r\n  owner = 1,\r\n}\r\n\r\nexport interface ICreatePostEstateRouteInterface extends RouteGenericInterface {\r\n  Body: {\r\n    title: string;\r\n    code: string;\r\n    slug: string;\r\n    lat?: number;\r\n    lang?: number;\r\n    address: string;\r\n    street: string;\r\n    type: number;\r\n    youtube_url?: string;\r\n    province_code: number;\r\n    district_code: number;\r\n    ward_code: number;\r\n    content?: string;\r\n    acreage?: number;\r\n    facade?: number;\r\n    num_way_in?: number;\r\n    price?: number;\r\n    unit?: number;\r\n    price_square_metre?: number;\r\n    direction_house?: number;\r\n    num_bed_room?: number;\r\n    direction_balcony?: number;\r\n    num_road_house?: number;\r\n    num_floors?: number;\r\n    num_bathroom?: number;\r\n    furniture?: string;\r\n    house_owning_document?: string;\r\n    contact_name?: string;\r\n    contant_phone?: string;\r\n    contact_mail?: string;\r\n  };\r\n}\r\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,uBAAAE,EAAA,mBAAAC,IAAA,eAAAC,EAAAJ,GAEO,IAAKG,MAAL,IAAKA,GAAA,IAEAD,OACVA,IAAA,SAAW,GAAX,WACAA,IAAA,MAAQ,GAAR,QAFUA,OAAA",
+  "names": ["postEstate_type_exports", "__export", "PostEstateIsOwner", "PostEstateType", "__toCommonJS"]
+}

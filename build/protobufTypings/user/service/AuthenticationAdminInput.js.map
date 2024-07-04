@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/AuthenticationAdminInput.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface AuthenticationAdminInput {\n  'authorization'?: (string);\n}\n\nexport interface AuthenticationAdminInput__Output {\n  'authorization'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["AuthenticationAdminInput_exports", "__toCommonJS"]
+}

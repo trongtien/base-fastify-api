@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/District.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface District {\n  'code'?: (number);\n  'name'?: (string);\n}\n\nexport interface District__Output {\n  'code'?: (number);\n  'name'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["District_exports", "__toCommonJS"]
+}

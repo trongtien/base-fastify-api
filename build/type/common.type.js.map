@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/type/common.type.ts"],
+  "sourcesContent": ["export interface IValidateHttp {\r\n  field: string;\r\n  code: string;\r\n  message: string;\r\n}\r\n\r\nexport interface IPaginationQueryParam {\r\n  offset?: number;\r\n  limit?: number;\r\n}\r\n\r\nexport type SortOrder = 'ASC' | 'DESC';\r\n\r\nexport interface ISortQueryParam<Sortkey = unknown> {\r\n  sortBy?: Sortkey;\r\n  sortOrder?: SortOrder;\r\n}\r\n\r\nexport interface ISeachQueryParam {\r\n  search?: string;\r\n}\r\n\r\n\r\nexport enum Block {\r\n  block = 1,\r\n  unBlock = 0,\r\n}\r\n\r\nexport enum Delete {\r\n  deleted = 1,\r\n  unDeleted = 0,\r\n}\r\n\r\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,WAAAE,EAAA,WAAAC,IAAA,eAAAC,EAAAJ,GAuBO,IAAKE,OACVA,IAAA,MAAQ,GAAR,QACAA,IAAA,QAAU,GAAV,UAFUA,OAAA,IAKAC,OACVA,IAAA,QAAU,GAAV,UACAA,IAAA,UAAY,GAAZ,YAFUA,OAAA",
+  "names": ["common_type_exports", "__export", "Block", "Delete", "__toCommonJS"]
+}

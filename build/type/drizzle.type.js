@@ -1,0 +1,2 @@
+"use strict";var o=Object.defineProperty;var i=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var l=Object.prototype.hasOwnProperty;var b=(a,e,n,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let t of m(e))!l.call(a,t)&&t!==n&&o(a,t,{get:()=>e[t],enumerable:!(r=i(e,t))||r.enumerable});return a};var p=a=>b(o({},"__esModule",{value:!0}),a);var s={};module.exports=p(s);
+//# sourceMappingURL=drizzle.type.js.map

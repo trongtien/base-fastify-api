@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/ProvinceQuery.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface ProvinceQuery {\n  'code'?: (string);\n}\n\nexport interface ProvinceQuery__Output {\n  'code'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["ProvinceQuery_exports", "__toCommonJS"]
+}

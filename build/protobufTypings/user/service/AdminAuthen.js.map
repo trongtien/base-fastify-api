@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/AdminAuthen.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface AdminAuthen {\n  'id'?: (string);\n  'username'?: (string);\n  'status'?: (string);\n  'role'?: (string);\n}\n\nexport interface AdminAuthen__Output {\n  'id'?: (string);\n  'username'?: (string);\n  'status'?: (string);\n  'role'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["AdminAuthen_exports", "__toCommonJS"]
+}

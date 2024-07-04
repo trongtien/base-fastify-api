@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/DistrictQuery.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface DistrictQuery {\n  'code'?: (string);\n  'provinceCode'?: (string);\n}\n\nexport interface DistrictQuery__Output {\n  'code'?: (string);\n  'provinceCode'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["DistrictQuery_exports", "__toCommonJS"]
+}

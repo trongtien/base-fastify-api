@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/protobufTypings/user/service/WardQuery.ts"],
+  "sourcesContent": ["// Original file: proto/user.proto\n\n\nexport interface WardQuery {\n  'code'?: (string);\n  'districtCode'?: (string);\n}\n\nexport interface WardQuery__Output {\n  'code'?: (string);\n  'districtCode'?: (string);\n}\n"],
+  "mappings": "+WAAA,IAAAA,EAAA,kBAAAC,EAAAD",
+  "names": ["WardQuery_exports", "__toCommonJS"]
+}

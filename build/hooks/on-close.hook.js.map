@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/hooks/on-close.hook.ts"],
+  "sourcesContent": ["import type { DoneFuncWithErrOrRes, FastifyInstance } from 'fastify';\r\n\r\nconst onCloseHook = (app: FastifyInstance, done: DoneFuncWithErrOrRes): void => {\r\n  try {\r\n    const appDb = app?.db as unknown as any;\r\n    const sessionDatabase = appDb?.session?.client;\r\n    if (sessionDatabase && typeof sessionDatabase?.end === 'function') {\r\n      sessionDatabase.end();\r\n      app.log.info('Database disconnect');\r\n    }\r\n\r\n    done();\r\n  } catch (error) {\r\n    app.log.error(`Application on close hook error ${error} `);\r\n  }\r\n};\r\n\r\nexport default onCloseHook;\r\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAEA,IAAMI,EAAc,CAACC,EAAsBC,IAAqC,CAC9E,GAAI,CAEF,IAAMC,EADQF,GAAK,IACY,SAAS,OACpCE,GAAmB,OAAOA,GAAiB,KAAQ,aACrDA,EAAgB,IAAI,EACpBF,EAAI,IAAI,KAAK,qBAAqB,GAGpCC,EAAK,CACP,OAASE,EAAP,CACAH,EAAI,IAAI,MAAM,mCAAmCG,IAAQ,CAC3D,CACF,EAEON,EAAQE",
+  "names": ["on_close_hook_exports", "__export", "on_close_hook_default", "__toCommonJS", "onCloseHook", "app", "done", "sessionDatabase", "error"]
+}
